@@ -1,11 +1,11 @@
 # Responsive Navigation Menu in React JS
 button 1:
 
-<!-- <button class="custom-btn custom-view-more">
+<button class="custom-btn custom-view-more">
       VIEW MORE
       <span class="custom-icon custom-left"></span>
       <span class="custom-icon custom-right"></span>
-    </button> -->
+    </button>
 
     button 2: 
     <!-- <button class="custom-btn custom-purchase-game">
