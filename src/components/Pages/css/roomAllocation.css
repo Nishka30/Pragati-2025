@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&display=swap');
 /* General container styling */
 .room-allocation-container {
-  background-color: #1e1e2f;
-  color: #ffffff;
+  /* color:#9AE202; */
   min-height: 100vh;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "'Chakra Petch'", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,12 +14,13 @@
 /* Title styling */
 .room-allocation-title {
   font-size: 2.5rem;
-  color: #33b70e;
+  color:#9AE202  !important;
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 /* Table container */
@@ -28,8 +29,8 @@
   max-width: 900px;
   border-radius: 12px;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(4, 244, 4, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
   margin-bottom: 2rem;
 }
 
@@ -42,12 +43,13 @@
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .header-item {
   flex: 1;
   text-align: center;
-  color: #09d42b;
+  color:#9AE202;
   font-size: 1rem;
 }
 
@@ -58,6 +60,7 @@
   padding: 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, opacity 0.3s ease;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .table-row:last-child {
