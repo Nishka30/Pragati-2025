@@ -63,7 +63,7 @@ function NavBar() {
               className="nav-links"
               onClick={handleClick}
             >
-              Blog
+              Events
             </NavLink>
           </li>
 
