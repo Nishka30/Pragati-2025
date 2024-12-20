@@ -25,7 +25,7 @@
 
 /* Table container */
 .room-allocation-table {
-  width: 90%;
+  width: 100%;
   max-width: 900px;
   border-radius: 12px;
   overflow: hidden;

@@ -5,6 +5,7 @@ import { Home } from "./components/Pages/Home";
 import { About } from "./components/Pages/About";
 import { Blog } from "./components/Pages/Blog";
 import { Allocation } from "./components/Pages/Allocation";
+import { Schedule } from "./components/Pages/Schedule";
 
 import { Contact } from "./components/Pages/Contact";
 import { Roomstart } from "./components/Pages/Roomstart";
@@ -29,14 +30,20 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/allocation" element={<Allocation />} />
-          {/* <Route path="/schedule" element={<Schedule />} /> */}
+          <Route path="/schedule" element={<Schedule />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/roomstart" element={<Roomstart />} />
           <Route path="/innovation" element={<Innovation />} />
-        <Route path="/coding-and-engineering" element={<CodingAndEngineering />} />
-        <Route path="/quiz-and-math-aptitude" element={<QuizAndMathAptitude />} />
-        <Route path="/gaming" element={<Gaming />} />
-        <Route path="/robotics" element={<Robotics />} />
+          <Route
+            path="/coding-and-engineering"
+            element={<CodingAndEngineering />}
+          />
+          <Route
+            path="/quiz-and-math-aptitude"
+            element={<QuizAndMathAptitude />}
+          />
+          <Route path="/gaming" element={<Gaming />} />
+          <Route path="/robotics" element={<Robotics />} />
         </Routes>
         {/* </div> */}
       </Router>

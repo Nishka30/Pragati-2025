@@ -66,6 +66,18 @@ function NavBar() {
               Events
             </NavLink>
           </li>
+          {/* Added schedule page  */}
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/schedule"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              Schedule
+            </NavLink>
+          </li>
 
           {/* Added room allocation page  */}
           <li className="nav-item">
