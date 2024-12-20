@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './MouseShadow.css'; // Import your CSS
+import React, { useState, useEffect } from "react";
+import "./MouseShadow.css"; // Import your CSS
 
 const MouseShadow = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -9,16 +9,16 @@ const MouseShadow = () => {
     const handleMouseMove = (event) => {
       setMousePosition({
         x: event.clientX + window.scrollX, // Account for horizontal scroll
-        y: event.clientY + window.scrollY  // Account for vertical scroll
+        y: event.clientY + window.scrollY, // Account for vertical scroll
       });
     };
 
     // Attach mousemove event listener to the document
-    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener("mousemove", handleMouseMove);
 
     // Clean up event listener on component unmount
     return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
@@ -27,7 +27,7 @@ const MouseShadow = () => {
       className="mouse-shadow"
       style={{
         left: `${mousePosition.x}px`,
-        top: `${mousePosition.y}px`
+        top: `${mousePosition.y}px`,
       }}
     />
   );
