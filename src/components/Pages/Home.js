@@ -35,12 +35,11 @@ export const Home = () => {
       </div>
       <div className="pages"> 
 
-              <div className="segment1">
+              {/* <div className="segment1">
                 <div className="segment1-100">
                     <div className="videobox1">
-                    {/* <video width="480" height="300" controls> */}
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vYxILGZ9IpQ?si=jEFhOZSQV4KJNmj1" title="YouTube video player" frameborder="0" allow=" autoplay;" allowfullscreen></iframe>
-                    {/* </video> */}
+                
+                    
                     </div>
                     <div className="videobox2">
                       <div className="vid-about">  <h1 className="head-cen">About The Event<br />Pragati 2K25</h1><br></br>
@@ -49,18 +48,20 @@ export const Home = () => {
                    </div>
 
                 </div>
-              </div>
-              <div className="segment1-1-1">
+              </div> */}
+
+
+              {/* <div className="segment1-1-1">
                 <div className="segment1-100-1">
                     <h1>Pragati2k25 Events</h1>
                   
             
                                 
                 </div>
-              </div>
+              </div> */}
                  
 
-              <div className="segment1-1-1">
+              {/* <div className="segment1-1-1">
                 <div className="segment1-100-1">
                   <div>
                     <h1>Pragati2k25 Sponsors</h1><br/><br/>
@@ -73,9 +74,9 @@ export const Home = () => {
                   </div>    
                 </div>
               </div>
+ */}
 
-
-              <div className="segment1">
+              {/* <div className="segment1">
                 <div className="segment1-100">
                 <div className="videobox2">
                       <div className="vid-about">  <h1 className="head-cen">Pragati2k25 Event<br />Venue</h1><br></br>
@@ -85,19 +86,19 @@ export const Home = () => {
                    </div>
                     <div className="videobox1">
                     <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.9151917805607!2d88.34512757435475!3d22.61964193124633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d65da7b3775%3A0x30915f7e98f1b0d5!2sMCKV%20Institute%20of%20Engineering!5e0!3m2!1sen!2sin!4v1733461586378!5m2!1sen!2sin"
-  width="450"
-  height="370"
-  style={{ border: 0 }}
-  allowFullScreen
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-/>
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.9151917805607!2d88.34512757435475!3d22.61964193124633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d65da7b3775%3A0x30915f7e98f1b0d5!2sMCKV%20Institute%20of%20Engineering!5e0!3m2!1sen!2sin!4v1733461586378!5m2!1sen!2sin"
+                              width="450"
+                              height="370"
+                              style={{ border: 0 }}
+                              allowFullScreen
+                              loading="lazy"
+                              referrerPolicy="no-referrer-when-downgrade"
+                            />
                     </div>
                     
 
                 </div>
-              </div>
+              </div> */}
 
       </div>
 
