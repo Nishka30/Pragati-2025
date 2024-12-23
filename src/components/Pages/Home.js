@@ -53,20 +53,12 @@ export const Home = () => {
               <div className="segment1-1-1">
                 <div className="segment1-100-1">
                     <h1>Pragati2k25 Events</h1>
-                    
-                    <button class="custom-btn custom-view-more">
-                      VIEW MORE
-                      <span class="custom-icon custom-left"></span>
-                      <span class="custom-icon custom-right"></span>
-                    </button>
-                    
-                    <button class="custom-btn custom-purchase-game">
-                      PURCHASE GAME
-                      <span class="custom-icon custom-left"></span>
-                      <span class="custom-icon custom-right"></span>
-                    </button>
+                  
+            
+                                
                 </div>
               </div>
+                 
 
               <div className="segment1-1-1">
                 <div className="segment1-100-1">

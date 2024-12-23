@@ -21,12 +21,12 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 5000); // Simulate loading
+    const timer = setTimeout(() => setLoading(false), 1000); // Simulate loading 5000
     return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
-    return <Preloader />; // Show preloader while loading
+    return <Preloader />; // Show preloader while loading 
   }
 
   return (
