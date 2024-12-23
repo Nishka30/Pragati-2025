@@ -16,6 +16,9 @@ import QuizAndMathAptitude from "./components/Pages/QuizAndMathAptitude";
 import Gaming from "./components/Pages/Gaming";
 import Robotics from "./components/Pages/Robotics";
 import Preloader from "./components/Preloader"; // Import Preloader component
+import { Members } from "./components/Pages/Members";
+
+ // Import the Members component
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -52,6 +55,7 @@ function App() {
         />
         <Route path="/gaming" element={<Gaming />} />
         <Route path="/robotics" element={<Robotics />} />
+        <Route path="/members" element={<Members />} /> {/* Add the Members route */}
       </Routes>
     </Router>
   );

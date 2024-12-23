@@ -1,21 +1,32 @@
-/* =============== INNOVATION PAGE STYLES =============== */
-.innovation-container {
-    padding: 2rem;
-    background: #f8f8f8;
-    min-height: 100vh;
-  }
-  
-  .innovation-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
+.Events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.Events-title {
+  font-size: 1rem;
+    color:#9AE202  !important;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
     text-align: center;
-    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.cardEvent__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+}
+
+/* Ensuring proper scaling and text display for .Events-title */
+@media screen and (max-width: 768px) {
+  .Events-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
-  
-  .card__grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    justify-items: center;
-  }
+}
