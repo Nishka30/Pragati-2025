@@ -18,18 +18,18 @@ import Robotics from "./components/Pages/Robotics";
 import Preloader from "./components/Preloader"; // Import Preloader component
 import { Members } from "./components/Pages/Members";
 
- // Import the Members component
+// Import the Members component
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1000); // Simulate loading 5000
+    const timer = setTimeout(() => setLoading(false), 5000); // Simulate loading 5000
     return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
-    return <Preloader />; // Show preloader while loading 
+    return <Preloader />; // Show preloader while loading
   }
 
   return (
@@ -55,7 +55,8 @@ function App() {
         />
         <Route path="/gaming" element={<Gaming />} />
         <Route path="/robotics" element={<Robotics />} />
-        <Route path="/members" element={<Members />} /> {/* Add the Members route */}
+        <Route path="/members" element={<Members />} />{" "}
+        {/* Add the Members route */}
       </Routes>
     </Router>
   );

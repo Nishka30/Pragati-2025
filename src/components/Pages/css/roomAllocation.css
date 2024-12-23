@@ -1,29 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&display=swap');
-/* General container styling */
-.room-allocation-container {
-  /* color:#9AE202; */
-  min-height: 100vh;
-  padding: 0;
-  font-family: "'Chakra Petch'", sans-serif;
+/* Search bar with button */
+.search-container {
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 900px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  overflow-x: hidden; /* Prevent horizontal scroll caused by animations */
 }
 
-/* Title styling */
-.room-allocation-title {
-  font-size: 2.5rem;
-  color:#9AE202  !important;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 2px;
-  font-family: "Chakra Petch", sans-serif;
+.search-button {
+  padding: 0.75rem 1.5rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #9ae202;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Table container */
+.search-button:hover {
+  background-color: #6eac01;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #9ae202;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #000;
+  background-color: #f0f0f0;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #4caf50;
+  background-color: #e8ffe8;
+}
+
+/* Table styling */
 .room-allocation-table {
   width: 100%;
   max-width: 900px;
@@ -49,7 +67,7 @@
 .header-item {
   flex: 1;
   text-align: center;
-  color:#9AE202;
+  color: #9ae202;
   font-size: 1rem;
 }
 
@@ -71,7 +89,7 @@
   flex: 1;
   text-align: center;
   font-size: 1rem;
-  color: #ffffff;
+  color: #ffffff; /* Changed text color to black for better contrast */
 }
 
 /* Animations for odd and even rows */
@@ -103,8 +121,16 @@
 
 /* Hover effect on rows */
 .table-row:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(237, 64, 64, 0.1);
   transform: scale(1.02);
+}
+
+/* No results message */
+.no-results {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #f00; /* Red color for no results message */
 }
 
 /* Responsive design */
@@ -114,7 +140,7 @@
   }
 
   .table-header, .table-row {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
