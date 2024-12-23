@@ -11,20 +11,20 @@ const Card = ({ image, title, description, link }) => {
 
   return (
     <div
-      className={`card ${isContentVisible ? "card--active" : ""}`}
+      className={`cardEvent ${isContentVisible ? "cardEvent--active" : ""}`}
       onClick={toggleContent}
     >
-      <img src={image} alt={title} className="card__image" />
+      <img src={image} alt={title} className="cardEvent__image" />
       <div
-        className={`card__content ${
-          isContentVisible ? "card__content--visible" : ""
+        className={`cardEvent__content ${
+          isContentVisible ? "cardEvent__content--visible" : ""
         }`}
       >
-        <h2 className="card__title">{title}</h2>
-        <span className="card__description">{description}</span>
+        <h2 className="cardEvent__title">{title}</h2>
+        <span className="cardEvent__description">{description}</span>
         <a
           href={link}
-          className="card__button"
+          className="cardEvent__button"
           onClick={(e) => e.stopPropagation()}
         >
           Read More

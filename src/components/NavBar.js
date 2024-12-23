@@ -5,11 +5,10 @@ import { HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
 
 function NavBar() {
   const [click, setClick] = useState(false);
-  const [scrolled, setScrolled] = useState(false); // To track scroll state
+  const [scrolled, setScrolled] = useState(false);
 
   const handleClick = () => setClick(!click);
 
-  // Scroll effect to add/remove "scrolled" class
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -66,7 +65,6 @@ function NavBar() {
               Events
             </NavLink>
           </li>
-          {/* Added schedule page  */}
           <li className="nav-item">
             <NavLink
               exact
@@ -78,8 +76,6 @@ function NavBar() {
               Schedule
             </NavLink>
           </li>
-
-          {/* Added room allocation page  */}
           <li className="nav-item">
             <NavLink
               exact
@@ -91,7 +87,17 @@ function NavBar() {
               Allocation
             </NavLink>
           </li>
-
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/members" // New Members page
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              Members
+            </NavLink>
+          </li>
           <li className="nav-item">
             <NavLink
               exact

@@ -1,13 +1,20 @@
-// Innovation.js
+// Event.js
 import React from "react";
 import Card from "./Card";
+import Footer from '../Footer';
 import "./css/Event.css";
+import "./css/Card.css";
+import "./css/index.css";
 
 const Innovation = () => {
   return (
-    <div className="innovation-container">
-      <h1 className="innovation-title">COMPITITION :: QUIZ AND MATH APTITUDE</h1>
-      <div className="card__grid">
+    <div>
+       <div className="pages"> 
+     <div className="segment11">
+        <div className="segment11-1">
+        <h1 className="Events-title">COMPITITION :: QUIZ AND MATH APTITUDE</h1>
+    <div className="Events-container">
+      <div className="cardEvent__grid">
         <Card
           image="https://via.placeholder.com/320x200"
           title="ENIGMA"
@@ -27,6 +34,11 @@ const Innovation = () => {
           link="/path3"  // unique link for this card
         />
       </div>
+    </div>
+    </div>
+      </div>
+      </div>
+      <Footer/>
     </div>
   );
 };

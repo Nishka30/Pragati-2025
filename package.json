@@ -12,6 +12,7 @@
     "react-responsive-navbar": "file:",
     "react-router-dom": "^6.8.1",
     "react-scripts": "^5.0.1",
+    "swiper": "^11.1.15",
     "web-vitals": "^3.1.1"
   },
   "scripts": {
