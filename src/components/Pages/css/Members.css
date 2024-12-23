@@ -12,6 +12,10 @@
   
   .team-section {
     margin-top: 4rem;
+    padding: 2rem;
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 8px;     /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
   }
   
   .section-title {
