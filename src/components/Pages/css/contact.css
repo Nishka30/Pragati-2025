@@ -83,7 +83,7 @@
   
     .segment111{
       flex-direction: column; /* Stack content vertically */
-      height: 60vh;
+      height: auto;
     }
   
   }
@@ -115,12 +115,7 @@
   }
   
   
-  /* .faq2 {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-  }
-   */
+  
   .faq-item {
     
     border: 1px solid grey;
@@ -164,3 +159,58 @@
     font-size: 2rem;
   }
   
+
+  /* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .faq-1 {
+    flex-direction: column; /* Stack the items vertically */
+    margin-top: 20px; /* Adjust margin */
+  }
+  .faq1,
+  .faq2 {
+    width: fit-content; /* Full width for both sections */
+    padding: 20px; /* Adjust padding */
+  }
+  .faq1 h1,
+  .faq-item h1{
+    font-size: 1.3rem; /* Smaller heading size */
+  }
+  .faq-question {
+    font-size: 16px; /* Smaller font for questions */
+  }
+  .faq-answer {
+    font-size: 14px; /* Smaller font for answers */
+  }
+  .faq2 {
+    height: auto; /* Adjust height to content */
+    margin-bottom: 50px;
+  }
+}
+
+/* Tablet devices (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .faq-1 {
+    flex-direction: column; /* Stack the items vertically */
+    margin-top: 30px; /* Adjust margin */
+  }
+  .faq1,
+  .faq2 {
+    width: 100%; /* Full width for both sections */
+    padding: 30px; /* Adjust padding */
+  }
+  .faq1 h1,
+  .faq-item h1,
+  .loc-text h1,
+  .faqs-text h1 {
+    font-size: 1.75rem; /* Adjusted heading size */
+  }
+  .faq-question {
+    font-size: 17px; /* Adjusted font for questions */
+  }
+  .faq-answer {
+    font-size: 15px; /* Adjusted font for answers */
+  }
+  .faq2 {
+    height: auto; /* Adjust height to content */
+  }
+}
