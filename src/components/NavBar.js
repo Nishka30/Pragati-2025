@@ -106,7 +106,7 @@ function NavBar() {
               className="nav-links"
               onClick={handleClick}
             >
-              Contact Us
+              FAQ's
             </NavLink>
           </li>
         </ul>
