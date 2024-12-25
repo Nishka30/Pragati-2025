@@ -2,23 +2,24 @@
 
 .blog-container {
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
   min-height: 100vh;
   box-sizing: border-box;
 }
 
-.cards-container {
+.blog-cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 5.5rem;
   margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 .blog-title {
   font-size: 2.5rem;
   color: #9AE202 !important;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem  !important;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
@@ -26,7 +27,7 @@
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Add shadow to the blog title */
 }
 
-.card {
+.blog-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,12 +42,12 @@
   border-radius: 8px; /* Ensure corners are rounded */
 }
 
-.card:hover {
+.blog-card:hover {
   transform: translateY(-10px);
   box-shadow: 3px 3px 12px rgba(0, 128, 0, 0.5), 15px 15px 40px rgba(0, 128, 0, 0.8); /* More pronounced shadow on hover */
 }
 
-.card-title {
+.blog-card-title {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -54,14 +55,14 @@
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Add shadow to the title */
 }
 
-.card-description {
-  font-size: 1rem;
+.blog-card-description {
+  font-size: 1.3rem !important;
   color: #555;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Light shadow for description */
 }
 
-.card-image {
+.blog-card-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -70,16 +71,16 @@
   transition: transform 0.3s ease;
 }
 
-.card-image:hover {
+.blog-card-image:hover {
   transform: scale(1.05);
 }
 
-.card-footer {
+.blog-card-footer {
   margin-top: auto;
   text-align: center;
 }
 
-.card-button {
+.blog-card-button {
   background-color: #28a745;
   color: #fff;
   border: none;
@@ -91,32 +92,32 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.card-button:hover {
+.blog-card-button:hover {
   background-color: #3cff00;
   transform: scale(1.05);
 }
 
 /* Responsive Adjustments */
 @media (max-width: 480px) {
-  .card {
-    width: 100%;
+  .blog-card {
+    width: 95%;
   }
 }
 
 @media (min-width: 600px) {
-  .card {
+  .blog-card {
     width: 48%;
   }
 }
 
 @media (min-width: 900px) {
-  .card {
+  .blog-card {
     width: 30%;
   }
 }
 
 @media (min-width: 1200px) {
-  .card {
+  .blog-card {
     width: 23%;
   }
 }
