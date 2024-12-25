@@ -2,17 +2,21 @@ import React from "react";
 import "./css/Members.css";
 import { FaWhatsapp, FaInstagram, FaGithub } from "react-icons/fa";
 import Footer from "../Footer"; // Import Footer component
+import Background from "./Background";
+import Background2 from "./Background2";
 
 export const Members = () => {
   return (
-    <div className="member-page">
+    <div><Background />
+    <Background2 />
+    <div className="member-page"> 
       <h1 className="page-title">Our Team</h1>
 
       {/* Tech Team Section */}
       <section className="team-section">
         <h2 className="section-title">Tech Team</h2>
         <div className="team-container">
-          {/* First Row of Tech Team Cards */}
+          {/* Tech Team Members */}
           <div className="team-member">
             <div className="member-photo">
               <img
@@ -136,7 +140,6 @@ export const Members = () => {
             </div>
           </div>
 
-          {/* Second Row of Tech Team Cards */}
           <div className="team-member">
             <div className="member-photo">
               <img
@@ -266,56 +269,258 @@ export const Members = () => {
       <section className="team-section">
         <h2 className="section-title">Event Organizers</h2>
         <div className="team-container">
-          {/* Add 10 Event Organizers Cards here in a similar way */}
-          {Array(10)
-            .fill()
-            .map((_, index) => (
-              <div className="team-member" key={index}>
-                <div className="member-photo">
-                  <img
-                    src="https://via.placeholder.com/150"
-                    alt="Event Organizer"
-                    className="member-img"
-                  />
-                </div>
-                <div className="member-info">
-                  <h3 className="member-name">Organizer {index + 1}</h3>
-                  <p className="member-role">Role {index + 1}</p>
-                  <p className="member-roll">Roll No: {index + 100000}</p>
-                  <div className="member-social">
-                    <a
-                      href="https://wa.me/1234567890"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="social-icon whatsapp"
-                    >
-                      <FaWhatsapp />
-                    </a>
-                    <a
-                      href="https://instagram.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="social-icon instagram"
-                    >
-                      <FaInstagram />
-                    </a>
-                    <a
-                      href="https://github.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="social-icon github"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
+          {/* Event Organizers */}
+          <div className="team-member">
+            <div className="member-photo">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Event Organizer"
+                className="member-img"
+              />
+            </div>
+            <div className="member-info">
+              <h3 className="member-name">Organizer 1</h3>
+              <p className="member-role">Event Manager</p>
+              <p className="member-roll">Roll No: 100001</p>
+              <div className="member-social">
+                <a
+                  href="https://wa.me/1234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon whatsapp"
+                >
+                  <FaWhatsapp />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon instagram"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon github"
+                >
+                  <FaGithub />
+                </a>
               </div>
-            ))}
+            </div>
+          </div>
+
+          <div className="team-member">
+            <div className="member-photo">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Event Organizer"
+                className="member-img"
+              />
+            </div>
+            <div className="member-info">
+              <h3 className="member-name">Organizer 2</h3>
+              <p className="member-role">Logistics Coordinator</p>
+              <p className="member-roll">Roll No: 100002</p>
+              <div className="member-social">
+                <a
+                  href="https://wa.me/1234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon whatsapp"
+                >
+                  <FaWhatsapp />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon instagram"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon github"
+                >
+                  <FaGithub />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="team-member">
+            <div className="member-photo">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Event Organizer"
+                className="member-img"
+              />
+            </div>
+            <div className="member-info">
+              <h3 className="member-name">Organizer 3</h3>
+              <p className="member-role">Event Coordinator</p>
+              <p className="member-roll">Roll No: 100003</p>
+              <div className="member-social">
+                <a
+                  href="https://wa.me/1234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon whatsapp"
+                >
+                  <FaWhatsapp />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon instagram"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon github"
+                >
+                  <FaGithub />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="team-member">
+            <div className="member-photo">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Event Organizer"
+                className="member-img"
+              />
+            </div>
+            <div className="member-info">
+              <h3 className="member-name">Organizer 4</h3>
+              <p className="member-role">Venue Manager</p>
+              <p className="member-roll">Roll No: 100004</p>
+              <div className="member-social">
+                <a
+                  href="https://wa.me/1234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon whatsapp"
+                >
+                  <FaWhatsapp />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon instagram"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon github"
+                >
+                  <FaGithub />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="team-member">
+            <div className="member-photo">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Event Organizer"
+                className="member-img"
+              />
+            </div>
+            <div className="member-info">
+              <h3 className="member-name">Organizer 5</h3>
+              <p className="member-role">Sponsorship Manager</p>
+              <p className="member-roll">Roll No: 100005</p>
+              <div className="member-social">
+                <a
+                  href="https://wa.me/1234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon whatsapp"
+                >
+                  <FaWhatsapp />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon instagram"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon github"
+                >
+                  <FaGithub />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="team-member">
+            <div className="member-photo">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Event Organizer"
+                className="member-img"
+              />
+            </div>
+            <div className="member-info">
+              <h3 className="member-name">Organizer 6</h3>
+              <p className="member-role">Marketing Manager</p>
+              <p className="member-roll">Roll No: 100006</p>
+              <div className="member-social">
+                <a
+                  href="https://wa.me/1234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon whatsapp"
+                >
+                  <FaWhatsapp />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon instagram"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon github"
+                >
+                  <FaGithub />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Footer Section */}
       <Footer />
+    </div>
     </div>
   );
 };

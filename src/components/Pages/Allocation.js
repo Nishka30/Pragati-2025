@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./css/roomAllocation.css";
-import Footer from "../Footer";
+import Footer from "../Footer"
+import Background from "./Background";
+import Background2 from "./Background2";
 
 export const Allocation = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -24,7 +26,9 @@ export const Allocation = () => {
   };
 
   return (
-    <div>
+    <div><Background />
+    <Background2 />
+
       <div className="pages">
         <div className="segment11">
           <div className="segment11-1">

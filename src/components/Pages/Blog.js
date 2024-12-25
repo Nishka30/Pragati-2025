@@ -2,11 +2,15 @@ import React from "react";
 import Footer from '../Footer';
 import { useNavigate } from "react-router-dom";
 import "./css/Blog.css"; // Import the Blog CSS;
+import Background from "./Background";
+import Background2 from "./Background2";
 
 export const Blog = () => {
   const navigate = useNavigate();
   return (
-    <div>
+
+    <div><Background />
+    <Background2/>
        <div className="pages"> 
      <div className="segment11">
         <div className="segment11-1">
@@ -122,8 +126,9 @@ export const Blog = () => {
     </div>
       </div>
       </div>
-      <Footer/>
+      <Footer/><Background />
+      <Background2 />
     </div>
-  );
+    );
 };
 

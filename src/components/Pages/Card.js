@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./css/Card.css";
+import Background from "./Background";
+import Background2 from "./Background2";
 
 const Card = ({ image, title, description, link }) => {
   const [isContentVisible, setIsContentVisible] = useState(false);
@@ -10,6 +12,8 @@ const Card = ({ image, title, description, link }) => {
   };
 
   return (
+    <div><Background />
+    <Background2 />
     <div
       className={`cardEvent ${isContentVisible ? "cardEvent--active" : ""}`}
       onClick={toggleContent}
@@ -30,6 +34,7 @@ const Card = ({ image, title, description, link }) => {
           Read More
         </a>
       </div>
+    </div>
     </div>
   );
 };

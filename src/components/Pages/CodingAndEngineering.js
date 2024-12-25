@@ -4,10 +4,13 @@ import Footer from "../Footer";
 import "./css/Event.css";
 import "./css/Card.css";
 import "./css/index.css";
+import Background from "./Background";
+import Background2 from "./Background2";
 
 const CodingAndEngineering = () => {
   return (
-    <div className="pages">
+    <div className="pages"><Background />
+    <Background2 />
       <div className="segment11">
         <div className="segment11-1">
           <h1 className="Events-title">COMPETITION :: CODING AND ENGINEERING</h1>

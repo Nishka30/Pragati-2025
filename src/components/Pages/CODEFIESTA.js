@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./css/Event.css";
+import Background from "./Background";
+import Background2 from "./Background2";
+
 
 const CODEFIESTA = () => {
   const [activeTab, setActiveTab] = useState("About");
@@ -19,7 +22,8 @@ const CODEFIESTA = () => {
   };
 
   return (
-    <section className="event-section">
+    <section className="event-section"><Background />
+    <Background2 />
       <div className="content">
         <div className="card">
           <img src={card.image} alt={card.title} />

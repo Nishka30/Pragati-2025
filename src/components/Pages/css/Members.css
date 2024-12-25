@@ -15,12 +15,13 @@
   padding: 2rem;
   border: 1px solid #ccc; /* Add a border */
   border-radius: 8px;     /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: subtle shadow */
+
 }
 
 .section-title {
   font-size: 2rem;
-  color: #4caf50;
+  color: #9AE202;
   margin-bottom: 2rem;
   font-weight: bold;
 }
@@ -38,13 +39,15 @@
   overflow: hidden;
   width: 250px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(154, 226, 2, 0.2); /* Greenish shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10!important;
+
 }
 
 .team-member:hover {
   transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(154, 226, 2, 0.3); /* Stronger green shadow on hover */
 }
 
 .member-photo {
@@ -64,6 +67,7 @@
   background-color: #282828; /* Darker background for member info */
   border-radius: 8px;
 }
+
 .member-name {
   font-size: 1.25rem;
   font-weight: bold;
@@ -81,6 +85,7 @@
   color: #777; /* Grey color for roll number */
   font-style: italic;
 }
+
 /* Social Media Icons */
 .member-social {
   display: flex;
@@ -89,13 +94,6 @@
   margin-top: 0.5rem;
   padding: 0.5rem;
   border-radius: 8px;
-}
-
-
-.social-icon {
-  font-size: 1.5rem;
-  color: #333;
-  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icon {

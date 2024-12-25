@@ -18,6 +18,8 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  z-index: 10!important;
+
 }
 
 .search-button:hover {
@@ -34,6 +36,8 @@
   color: #000;
   background-color: #f0f0f0;
   outline: none;
+  z-index: 10!important;
+
 }
 
 .search-input:focus {
@@ -50,6 +54,8 @@
   background-color: rgba(4, 244, 4, 0.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
   margin-bottom: 2rem;
+  z-index: 10!important;
+
 }
 
 /* Table header */
@@ -62,6 +68,7 @@
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   font-family: "Chakra Petch", sans-serif;
+  
 }
 
 .header-item {

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
-
+import Background from "./Background";
+import Background2 from "./Background2";
 import Footer from '../Footer';
 import './css/contact.css'; // Import your CSS
 
@@ -36,7 +37,8 @@ export const Contact = () => {
     setVisibleIndex(visibleIndex === index ? null : index);
   };
   return (
-    <div>
+    <div><Background />
+    <Background2 />
     <div className="pages"> 
      <div className="segment111">
         <div className="segment111-1">

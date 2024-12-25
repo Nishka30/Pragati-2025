@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"; // Import Link component for navigation
 import Footer from "../Footer";
 import "./css/schedule.css";
 import "../MouseShadow.css";
+import Background from "./Background";
+import Background2 from "./Background2";
 
 export const Schedule = () => {
   const [selectedDay, setSelectedDay] = useState("Day 1");
@@ -90,7 +92,8 @@ export const Schedule = () => {
   };
 
   return (
-    <div>
+    <div><Background />
+    <Background2 />
       <div className="pages">
         <div className="segment11">
           <div className="segment11-1">
