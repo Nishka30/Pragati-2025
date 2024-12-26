@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10 !important;
 }
 
 .search-button {
@@ -18,6 +19,7 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  z-index: 10 !important;
 }
 
 .search-button:hover {
@@ -34,6 +36,7 @@
   color: #000;
   background-color: #f0f0f0;
   outline: none;
+  z-index: 10 !important;
 }
 
 .search-input:focus {
@@ -48,8 +51,9 @@
   border-radius: 12px;
   overflow: hidden;
   background-color: rgba(4, 244, 4, 0.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
+  z-index: 10 !important;
 }
 
 /* Table header */
@@ -62,6 +66,7 @@
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   font-family: "Chakra Petch", sans-serif;
+  z-index: 10 !important;
 }
 
 .header-item {
@@ -69,6 +74,7 @@
   text-align: center;
   color: #9ae202;
   font-size: 1rem;
+  z-index: 10 !important;
 }
 
 /* Table rows */
@@ -79,6 +85,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, opacity 0.3s ease;
   font-family: "Chakra Petch", sans-serif;
+  z-index: 10 !important;
 }
 
 .table-row:last-child {
@@ -89,7 +96,8 @@
   flex: 1;
   text-align: center;
   font-size: 1rem;
-  color: #ffffff; /* Changed text color to black for better contrast */
+  color: #ffffff;
+  z-index: 10 !important;
 }
 
 /* Animations for odd and even rows */
@@ -97,12 +105,14 @@
   opacity: 0;
   transform: translateX(-100%);
   animation: slideInLeft 2s ease forwards;
+  z-index: 10 !important;
 }
 
 .slide-from-right {
   opacity: 0;
   transform: translateX(100%);
   animation: slideInRight 2s ease forwards;
+  z-index: 10 !important;
 }
 
 @keyframes slideInLeft {
@@ -123,6 +133,7 @@
 .table-row:hover {
   background-color: rgba(237, 64, 64, 0.1);
   transform: scale(1.02);
+  z-index: 10 !important;
 }
 
 /* No results message */
@@ -130,22 +141,47 @@
   text-align: center;
   padding: 1rem;
   font-size: 1rem;
-  color: #f00; /* Red color for no results message */
+  color: #f00;
+  z-index: 10 !important;
 }
+
+.search-dropdown {
+  padding: 8px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 400px; /* Increase this value as needed */
+  z-index: 10 !important;
+}
+
+
+.search-input {
+  padding: 8px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  z-index: 10 !important;
+}
+
 
 /* Responsive design */
 @media screen and (max-width: 600px) {
   .room-allocation-table {
-    width: 95%;
+    width: 100%;
+    z-index: 10 !important;
   }
 
   .table-header, .table-row {
     flex-direction: row;
     align-items: center;
+    z-index: 10 !important;
   }
 
   .header-item, .row-item {
     text-align: left;
     padding: 0.5rem 0;
+    z-index: 10 !important;
   }
 }

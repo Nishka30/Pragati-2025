@@ -7,10 +7,11 @@ h3{
     background-color: transparent;
    color:#737373;
     padding: 20px 0;
-    border-top: 1px solid grey;
   }
 
-
+.f-logo{
+    width: 40px;
+}
 
   
   .site-footer a {
@@ -193,34 +194,11 @@ h3{
       justify-content: center;
     }
   
-    .f-div-0{
-      width: 95%;
+    .f-div-0, .f-div-1, .f-div-2 {
+      width: 100%;
       padding: 10px;
-      display: flex;
-      justify-content: center; /* Centers items horizontally */
-      align-items: center; /* Centers items vertically */
-      text-align: center; /* Ensures text alignment within the container */
+      text-align: center;
     }
-    .f-div-1 {
-      width: 95%;
-      padding: 10px;
-      display: flex;
-      justify-content: center; /* Centers items horizontally */
-      align-items: center; /* Centers items vertically */
-      text-align: center; /* Ensures text alignment within the container */
-    }
-    
-    .f-div-2 {
-      width: 60%;
-      padding: 10px;
-      display: flex
-;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      margin: auto;
-    }
-    
 h3{
     padding:5px
 }
@@ -278,7 +256,3 @@ body {
     margin-top: auto;
   }
   
-  .f-logo{
-    width: 40px;
-    height: 60px;
-  }

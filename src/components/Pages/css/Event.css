@@ -23,6 +23,7 @@
   justify-items: center;
 }
 
+
 /* Ensuring proper scaling and text display for .Events-title */
 @media screen and (max-width: 768px) {
   .Events-title {

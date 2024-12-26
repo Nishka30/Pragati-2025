@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"; // Import Link component for navigation
 import Footer from "../Footer";
 import "./css/schedule.css";
 import "../MouseShadow.css";
+import Background from "./Background";
+import Background2 from "./Background2";
 
 export const Schedule = () => {
   const [selectedDay, setSelectedDay] = useState("Day 1");
@@ -10,6 +12,54 @@ export const Schedule = () => {
   // Schedule data for each day
   const scheduleData = {
     "Day 1": [
+      {
+        title: "09:00 AM - 09:30 AM IST - Registration (Amtala)",
+        description: (
+          <ul>
+            <li>
+              From 09:00 am - 09:30 am, participant registration will continue
+              at Amtala in MCKVIE College campus. Participants are requested to
+              bring valid college ID to register at the registration desk.
+            </li>
+          </ul>
+        ),
+      },
+      {
+        title: "09:00 AM - 09:30 AM IST - Registration (Amtala)",
+        description: (
+          <ul>
+            <li>
+              From 09:00 am - 09:30 am, participant registration will continue
+              at Amtala in MCKVIE College campus. Participants are requested to
+              bring valid college ID to register at the registration desk.
+            </li>
+          </ul>
+        ),
+      },
+      {
+        title: "09:00 AM - 09:30 AM IST - Registration (Amtala)",
+        description: (
+          <ul>
+            <li>
+              From 09:00 am - 09:30 am, participant registration will continue
+              at Amtala in MCKVIE College campus. Participants are requested to
+              bring valid college ID to register at the registration desk.
+            </li>
+          </ul>
+        ),
+      },
+      {
+        title: "09:00 AM - 09:30 AM IST - Registration (Amtala)",
+        description: (
+          <ul>
+            <li>
+              From 09:00 am - 09:30 am, participant registration will continue
+              at Amtala in MCKVIE College campus. Participants are requested to
+              bring valid college ID to register at the registration desk.
+            </li>
+          </ul>
+        ),
+      },
       {
         title: "09:00 AM - 09:30 AM IST - Registration (Amtala)",
         description: (
@@ -36,6 +86,50 @@ export const Schedule = () => {
       },
     ],
     "Day 2": [
+      {
+        title: "09:00 AM - 10:00 AM IST - Registration (Amtala)",
+        description: (
+          <ul>
+            <li>
+              From 09:00 am - 10:00 am, participant registration will continue
+              at Amtala in MCKVIE College campus.
+            </li>
+          </ul>
+        ),
+      },
+      {
+        title: "09:00 AM - 10:00 AM IST - Registration (Amtala)",
+        description: (
+          <ul>
+            <li>
+              From 09:00 am - 10:00 am, participant registration will continue
+              at Amtala in MCKVIE College campus.
+            </li>
+          </ul>
+        ),
+      },
+      {
+        title: "09:00 AM - 10:00 AM IST - Registration (Amtala)",
+        description: (
+          <ul>
+            <li>
+              From 09:00 am - 10:00 am, participant registration will continue
+              at Amtala in MCKVIE College campus.
+            </li>
+          </ul>
+        ),
+      },
+      {
+        title: "09:00 AM - 10:00 AM IST - Registration (Amtala)",
+        description: (
+          <ul>
+            <li>
+              From 09:00 am - 10:00 am, participant registration will continue
+              at Amtala in MCKVIE College campus.
+            </li>
+          </ul>
+        ),
+      },
       {
         title: "09:00 AM - 10:00 AM IST - Registration (Amtala)",
         description: (
@@ -86,15 +180,84 @@ export const Schedule = () => {
           </ul>
         ),
       },
+      {
+        title: "10:00 AM - 11:00 AM IST - Event continues of Pragati2024",
+        description: (
+          <ul>
+            <li>
+              <Link to="/about">TECHNICAL POSTER</Link>
+            </li>
+            <li>
+              <Link to="/about">QUIZOMANIA</Link>
+            </li>
+          </ul>
+        ),
+      },
+      {
+        title: "10:00 AM - 11:00 AM IST - Event continues of Pragati2024",
+        description: (
+          <ul>
+            <li>
+              <Link to="/about">TECHNICAL POSTER</Link>
+            </li>
+            <li>
+              <Link to="/about">QUIZOMANIA</Link>
+            </li>
+          </ul>
+        ),
+      },
+      {
+        title: "10:00 AM - 11:00 AM IST - Event continues of Pragati2024",
+        description: (
+          <ul>
+            <li>
+              <Link to="/about">TECHNICAL POSTER</Link>
+            </li>
+            <li>
+              <Link to="/about">QUIZOMANIA</Link>
+            </li>
+          </ul>
+        ),
+      },
+      {
+        title: "10:00 AM - 11:00 AM IST - Event continues of Pragati2024",
+        description: (
+          <ul>
+            <li>
+              <Link to="/about">TECHNICAL POSTER</Link>
+            </li>
+            <li>
+              <Link to="/about">QUIZOMANIA</Link>
+            </li>
+          </ul>
+        ),
+      },
+      {
+        title: "10:00 AM - 11:00 AM IST - Event continues of Pragati2024",
+        description: (
+          <ul>
+            <li>
+              <Link to="/about">TECHNICAL POSTER</Link>
+            </li>
+            <li>
+              <Link to="/about">QUIZOMANIA</Link>
+            </li>
+          </ul>
+        ),
+      },
     ],
   };
 
   return (
     <div>
+      <Background />
+      <Background2 />
       <div className="pages">
         <div className="segment11">
           <div className="segment11-1">
             {/* Buttons for Selecting Days */}
+            <h3>** Still in development **</h3>
+            <br></br>
             <div className="day-selector">
               {Object.keys(scheduleData).map((day) => (
                 <button
