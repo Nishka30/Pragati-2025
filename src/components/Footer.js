@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
 
             <div className="f-div-1">
-            <h4>Developed by Pragati Developer Team</h4> 
+            <h4>Developed by Developer Team of Pragati</h4> 
               
             </div>
 
