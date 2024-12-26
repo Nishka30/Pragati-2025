@@ -43,7 +43,7 @@ export const Contact = () => {
      <div className="segment111">
         <div className="segment111-1">
           <div className="contuct-us-text">
-            <h1>Helps</h1>
+            <h1>Faqs</h1>
           </div>
           <div className="faqs-text"><h1>Event Location</h1></div>
         </div>
