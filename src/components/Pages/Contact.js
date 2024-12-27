@@ -37,8 +37,7 @@ export const Contact = () => {
     setVisibleIndex(visibleIndex === index ? null : index);
   };
   return (
-    <div><Background />
-    <Background2 />
+    <div><Background /><Background2 />
     <div className="pages"> 
      <div className="segment111">
         <div className="segment111-1">
