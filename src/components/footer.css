@@ -161,6 +161,7 @@ h3{
     align-items: center;
 
 }
+
 .f-div-1{
     width: 70%;
     padding:10px;
@@ -169,17 +170,29 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10 !important;
 }
-.f-div-2{
-    width: 10%;
-    padding:10px;
-    gap: 15px;
-    display: contents;
-    justify-content: center;
-    align-items: center;
-    display: flex;
- 
+.f-div-2 {
+  width: 10%;
+  padding: 10px;
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+@media (min-width: 1024px) { /* Adjust size for laptop screens and above */
+  .f-div-2 {
+      width: 14%; /* Increase the size */
+      gap: 20px;  /* Adjust gap if needed */
+  }
+
+  .f-div-2 svg {
+      width: 35px; /* Adjust icon size */
+      height: 35px;
+  }
+}
+
 
 /* Responsive adjustments for footer */
 @media (max-width: 767px) {

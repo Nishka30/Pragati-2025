@@ -191,6 +191,9 @@
     font-size: 2rem;
     z-index: 10 !important;
   }
+  .map{
+    z-index: 11 !important;
+  }
   
 
   /* Mobile devices (up to 480px) */

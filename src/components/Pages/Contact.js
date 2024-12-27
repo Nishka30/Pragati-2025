@@ -73,7 +73,7 @@ export const Contact = () => {
         </div>
         <div className="loc-text"><h1>Event Location</h1></div>
 
-        <iframe
+        <iframe className="map"
                               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.9151917805607!2d88.34512757435475!3d22.61964193124633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d65da7b3775%3A0x30915f7e98f1b0d5!2sMCKV%20Institute%20of%20Engineering!5e0!3m2!1sen!2sin!4v1733461586378!5m2!1sen!2sin"
                               width="100%"
                               height="370"
