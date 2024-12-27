@@ -1,40 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import "./css/Card.css";
-import Background from "./Background";
-import Background2 from "./Background2";
+import "./css/Event.css";
 
 const Card = ({ image, title, description, link }) => {
-  const [isContentVisible, setIsContentVisible] = useState(false);
-
-  const toggleContent = () => {
-    setIsContentVisible(!isContentVisible);
-  };
-
   return (
-    <div><Background />
-    <Background2 />
-    <div
-      className={`cardEvent ${isContentVisible ? "cardEvent--active" : ""}`}
-      onClick={toggleContent}
-    >
+    <div className="cardEvent">
       <img src={image} alt={title} className="cardEvent__image" />
-      <div
-        className={`cardEvent__content ${
-          isContentVisible ? "cardEvent__content--visible" : ""
-        }`}
-      >
+      <div className="cardEvent__content">
         <h2 className="cardEvent__title">{title}</h2>
-        <span className="cardEvent__description">{description}</span>
-        <a
-          href={link}
-          className="cardEvent__button"
-          onClick={(e) => e.stopPropagation()}
-        >
+        <p className="cardEvent__description">{description}</p>
+        <a href={link} className="cardEvent__button">
           Read More
         </a>
       </div>
-    </div>
     </div>
   );
 };

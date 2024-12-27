@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import "./css/Inner-Event.css";
 import Background from "./Background";
@@ -5,7 +6,7 @@ import Background2 from "./Background2";
 import Footer from "../Footer";
 import eventImage from "./../images/cotact-small-bg.jpg"; // Import the image
 
-const CODEFIESTA = () => {
+const ROBO_WAR = () => {
   const [activeTab, setActiveTab] = useState("About");
 
   const tabsContent = {
@@ -18,8 +19,8 @@ const CODEFIESTA = () => {
   const card = {
     id: 1,
     image: eventImage, // Replace with actual image URL
-    rating: "team : 2",
-    title: "Codefiesta",
+    rating: "team : 2-4",
+    title: "ROBO WAR",
   };
 
   return (
@@ -37,7 +38,7 @@ const CODEFIESTA = () => {
           </div>
           <div className="info">
             {/* Added Heading */}
-            <h3>Codefiesta</h3>
+            <h3>ROBO WAR</h3>
             <div className="tabs">
               {Object.keys(tabsContent).map((tab) => (
                 <button
@@ -63,4 +64,4 @@ const CODEFIESTA = () => {
   );
 };
 
-export default CODEFIESTA;
+export default ROBO_WAR;

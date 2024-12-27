@@ -3,7 +3,6 @@ import React from "react";
 import Card from "./Card";
 import Footer from '../Footer';
 import "./css/Event.css";
-import "./css/Card.css";
 import "./css/index.css";
 import Background from "./Background";
 import Background2 from "./Background2";
@@ -22,19 +21,19 @@ const Innovation = () => {
           image="https://via.placeholder.com/320x200"
           title="ROBO FIFA"
           description="TEAM:: (2-4), ROBOTICS"
-          link="/path1"  // unique link for this card
+          link="/ROBO_FIFA"  // unique link for this card
         />
         <Card
           image="https://via.placeholder.com/320x200"
           title="ROBO WAR"
           description="TEAM:: (2-4), ROBOTICS"
-          link="/path2"  // unique link for this card
+        link="/ROBO_WAR"  // unique link for this card
         />
         <Card
           image="https://via.placeholder.com/320x200"
           title="CHASE THE MAZE"
           description="TEAM:: (2), ROBOTICS"
-          link="/path3"  // unique link for this card
+          link="/CHASE_THE_MAZE"  // unique link for this card
         />
       </div>
     </div>

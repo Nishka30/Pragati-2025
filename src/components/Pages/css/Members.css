@@ -2,12 +2,15 @@
 .member-page {
   padding: 2rem;
   text-align: center;
+  text-shadow: 0 4px 8px rgba(174, 255, 0, 0.2), 0 6px 20px rgba(174, 255, 0, 0.3);
+  z-index: 10!important
 }
 
 .page-title {
   font-size: 3rem;
   color: #9AE202;
   margin-bottom: 2rem;
+  z-index: 10!important;
 }
 
 .team-section {
@@ -16,7 +19,9 @@
   border: 1px solid #ccc; /* Add a border */
   border-radius: 8px;     /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: subtle shadow */
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .section-title {
@@ -24,6 +29,15 @@
   color: #9AE202;
   margin-bottom: 2rem;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 0 4px 8px rgba(174, 255, 0, 0.2), 0 6px 20px rgba(174, 255, 0, 0.3);
+  z-index: 10!important;
+}
+.section-title:hover {
+  text-shadow: 0 6px 12px rgba(174, 255, 0, 0.5);
+  transition: text-shadow 0.3s ease-in-out;
 }
 
 .team-container {
@@ -115,7 +129,7 @@
 }
 
 .social-icon.github:hover {
-  color: #333;
+  color: #ccc;
 }
 
 /* Responsiveness */
@@ -126,7 +140,7 @@
   }
 
   .team-member {
-    width: 90%; /* Adjust width for smaller screens */
+    width: 65vw; /* Adjust width for smaller screens */
     margin-bottom: 3rem; /* Add spacing between cards */
   }
 

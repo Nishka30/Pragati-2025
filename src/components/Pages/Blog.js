@@ -126,8 +126,7 @@ export const Blog = () => {
     </div>
       </div>
       </div>
-      <Footer/><Background />
-      <Background2 />
+      <Footer/>
     </div>
     );
 };

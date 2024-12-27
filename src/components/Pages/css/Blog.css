@@ -12,7 +12,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5.5rem;
+  gap: 8rem!important;
   margin-top: 2rem;
   margin-bottom: 5rem;
 }
@@ -25,22 +25,31 @@
   text-align: center;
   letter-spacing: 2px;
   font-family: "Chakra Petch", sans-serif;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Add shadow to the blog title */
+  text-shadow: 0 4px 8px rgba(174, 255, 0, 0.2), 0 6px 20px rgba(174, 255, 0, 0.3)!important;
+  z-index: 10!important;
 }
 
 .blog-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(#0e0c15, #333);
-  box-shadow: 3px 3px 10px rgba(0, 128, 0, 0.4), 10px 10px 30px rgba(0, 128, 0, 0.6); /* Custom shadow with larger radius on right and bottom */
+  background: linear-gradient(
+    180deg,
+    rgba(154, 226, 2, 0.28) 0%, /* Light green gradient */
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  border: 3px solid rgba(128, 186, 4, 0.8); /* Enhanced border visibility */ /* Custom shadow with larger radius on right and bottom */
+  box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+  0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
   padding: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
   overflow: hidden;
   width: 100%;
-  max-width: 350px;
+  max-width: 350px !important;
   text-align: center;
-  border-radius: 8px; /* Ensure corners are rounded */
+  border-radius: 10px; /* Ensure corners are rounded */
   z-index: 10!important;
 }
 
@@ -53,12 +62,12 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #707070;
+  color: #a1a1a1;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Add shadow to the title */
 }
 
 .blog-card-description {
-  font-size: 1.3rem !important;
+  font-size: 1rem !important;
   color: #555;
   margin-bottom: 1rem !important;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Light shadow for description */

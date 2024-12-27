@@ -7,9 +7,8 @@ import Background2 from "./Background2";
 
 export const Members = () => {
   return (
-    <div><Background />
+    <div className="member-page"> <Background />
     <Background2 />
-    <div className="member-page"> 
       <h1 className="page-title">Our Team</h1>
 
       {/* Tech Team Section */}
@@ -27,7 +26,7 @@ export const Members = () => {
             </div>
             <div className="member-info">
               <h3 className="member-name">John Doe</h3>
-              <p className="member-role">Lead Developer</p>
+              <p className="member-role">Developer</p>
               <p className="member-roll">Roll No: 123456</p>
               <div className="member-social">
                 <a
@@ -68,7 +67,7 @@ export const Members = () => {
             </div>
             <div className="member-info">
               <h3 className="member-name">Jane Smith</h3>
-              <p className="member-role">Frontend Developer</p>
+              <p className="member-role"> Developer</p>
               <p className="member-roll">Roll No: 654321</p>
               <div className="member-social">
                 <a
@@ -109,7 +108,7 @@ export const Members = () => {
             </div>
             <div className="member-info">
               <h3 className="member-name">Sam Taylor</h3>
-              <p className="member-role">Backend Developer</p>
+              <p className="member-role">Developer</p>
               <p className="member-roll">Roll No: 789012</p>
               <div className="member-social">
                 <a
@@ -143,18 +142,18 @@ export const Members = () => {
           <div className="team-member">
             <div className="member-photo">
               <img
-                src="https://via.placeholder.com/150"
+                src="/001.jpg"
                 alt="Tech Team Member"
                 className="member-img"
               />
             </div>
             <div className="member-info">
-              <h3 className="member-name">Alex Morgan</h3>
-              <p className="member-role">Full Stack Developer</p>
-              <p className="member-roll">Roll No: 101112</p>
+              <h3 className="member-name">Rohit Kumar</h3>
+              <p className="member-role">Developer</p>
+              <p className="member-roll">B.VOC/SD-2nd Year</p>
               <div className="member-social">
                 <a
-                  href="https://wa.me/3456789012"
+                  href="https://wa.link/9l81kp"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon whatsapp"
@@ -162,7 +161,7 @@ export const Members = () => {
                   <FaWhatsapp />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/rohit..writes_?igsh=Zm1hMnI3aGZvZXRx"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon instagram"
@@ -170,7 +169,7 @@ export const Members = () => {
                   <FaInstagram />
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Rohitsaw6207"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon github"
@@ -191,7 +190,7 @@ export const Members = () => {
             </div>
             <div className="member-info">
               <h3 className="member-name">Emma Clark</h3>
-              <p className="member-role">UI/UX Designer</p>
+              <p className="member-role">Developer</p>
               <p className="member-roll">Roll No: 131415</p>
               <div className="member-social">
                 <a
@@ -232,7 +231,7 @@ export const Members = () => {
             </div>
             <div className="member-info">
               <h3 className="member-name">Daniel Lee</h3>
-              <p className="member-role">DevOps Engineer</p>
+              <p className="member-role">Developer</p>
               <p className="member-roll">Roll No: 161718</p>
               <div className="member-social">
                 <a
@@ -520,7 +519,6 @@ export const Members = () => {
 
       {/* Footer Section */}
       <Footer />
-    </div>
     </div>
   );
 };
