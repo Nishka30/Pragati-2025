@@ -1,0 +1,79 @@
+/* =============== CARD DESIGN =============== */
+.cardEvent {
+  position: relative;
+  width: 320px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardEvent:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cardEvent__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardEvent__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.cardEvent__content--visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.cardEvent__title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.cardEvent__description {
+  font-size: 0.875rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.cardEvent__button {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: green;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cardEvent__button:hover {
+  text-decoration: underline;
+}
+
+/* Mobile-first: Enable click interactions */
+@media screen and (max-width: 768px) {
+  .cardEvent:hover .cardEvent__content {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  .cardEvent--active .cardEvent__content {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

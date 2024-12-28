@@ -78,9 +78,8 @@
 } */
 
 .nav-item {
-  line-height:2px;
+  line-height: 40px;
   margin-right: 1rem;
-  color: #9AE202;
 }
 
 .nav-item:after {
@@ -126,26 +125,15 @@
   }
 
   .nav-menu.active {
-    /* background: white;
+    background: white;
     
     left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1; */
-
-
-    background: rgb(255 255 255 / 0%);/* White background with some transparency */
-backdrop-filter: blur(10px); /* Apply blur effect */
--webkit-backdrop-filter: blur(10px); /* Safari support */
-left: 0px;
-opacity: 1;
-transition: all 0.5s ease;
-z-index: 1;
-border: 1px solid grey;
-
+    z-index: 1;
   }
   .nav-item .active {
-    color: #9AE202;
+    color: black;
     border: none;
   }
   .nav-item:hover:after {
@@ -156,7 +144,7 @@ border: 1px solid grey;
     padding: 1.5rem;
     width: 100%;
     display: table;
-    color: #9AE202;
+    color: black;
   }
 
   .nav-logo .icon {
