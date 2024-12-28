@@ -3,12 +3,14 @@ import React from "react";
 import Card from "./Card";
 import Footer from '../Footer';
 import "./css/Event.css";
-import "./css/Card.css";
 import "./css/index.css";
+import Background from "./Background";
+import Background2 from "./Background2";
 
 const Innovation = () => {
   return (
-    <div>
+    <div><Background />
+    <Background2 />
        <div className="pages"> 
      <div className="segment11">
         <div className="segment11-1">
@@ -20,13 +22,13 @@ const Innovation = () => {
           image="https://via.placeholder.com/320x200"
           title="NFS-MOST WANTED"
           description="SOLO PATICIPATION, GAMING"
-          link="/path1"  // unique link for this card
+          link="/NFS_MOSTWANTED"  // unique link for this card
         />
         <Card
           image="https://via.placeholder.com/320x200"
           title="FIFA"
           description="SOLO PATICIPATION, GAMING"
-          link="/path2"  // unique link for this card
+          link="/FIFA"  // unique link for this card
         />
       </div>
     </div>

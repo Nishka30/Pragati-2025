@@ -1,13 +1,20 @@
 import React, { useEffect } from "react";
 import "./css/home.css";
 import "./css/index.css";
+<<<<<<< HEAD
 import hp from "../images/hp.png";
 import nike from "../images/nike.jpg"; 
 import Footer from "../Footer";
+=======
+import Footer from '../Footer';
+import Background from "./Background";
+import Background2 from "./Background2";
+>>>>>>> db1430ab7c98c58df15b9fd9d83c949f0ec0ae4e
 
 export const Home = () => {
   return (
     <div>
+<<<<<<< HEAD
       <div className="pages">
         <div className="segment1">
           <div className="segment1-1">
@@ -135,6 +142,18 @@ export const Home = () => {
         </div>
       </div>
 
+=======
+    <Background />
+    <Background2 />
+<div className="pages">      
+      <div className="segment1">
+        <div className="segment1-1" style={{zIndex: 10}}>
+          <h1>Welcome Pragati 2K25,<br />Battleground of Students</h1>
+          <p>Unleash Brainwave's potential & show <br />the power of your knowledge</p>
+        </div>
+      </div>
+    </div> 
+>>>>>>> db1430ab7c98c58df15b9fd9d83c949f0ec0ae4e
       <Footer />
     </div>
   );
