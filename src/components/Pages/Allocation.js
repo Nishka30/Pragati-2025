@@ -54,7 +54,7 @@ export const Allocation = () => {
         <div className="segment11">
           <div className="segment11-1">
             <div className="room-allocation-container">
-              <h3>** Still in development **</h3>
+              {/* <h3>** Still in development **</h3> */}
               <h1 className="room-allocation-title">Room Allocation</h1>
               {/* Search Dropdown */}
               <div className="search-container">

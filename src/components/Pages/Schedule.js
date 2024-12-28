@@ -256,7 +256,7 @@ export const Schedule = () => {
         <div className="segment11">
           <div className="segment11-1">
             {/* Buttons for Selecting Days */}
-            <h3>** Still in development **</h3>
+            {/* <h3>** Still in development **</h3> */}
             <br></br>
             <div className="day-selector">
               {Object.keys(scheduleData).map((day) => (

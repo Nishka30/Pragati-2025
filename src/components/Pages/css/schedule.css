@@ -31,7 +31,7 @@
 .schedule-container {
   width: 40%;
   position: relative;
-  padding: 10px 30px;
+  padding: 40px 30px;
   animation: AnimateContainer 1s linear forwards;
   opacity: 0;
   animation-delay: var(--dly);
@@ -55,7 +55,7 @@
 }
 
 .text-content {
-  padding: 15px 20px;
+  padding: 25px 20px;
   border-radius: 10px;
   box-shadow: 0 5px 10px #20e34a;
   margin: auto;
